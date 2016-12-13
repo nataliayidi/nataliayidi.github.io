@@ -13,7 +13,6 @@ nav ul{
   margin: 20px;
   padding: 40px;
   overflow: hidden;
-  background-color: #FFFFFF;
 }
 
 nav li {
@@ -28,6 +27,11 @@ nav li a {
     text-decoration: none;
 }
 
+.middle{
+    border-top:5px dashed #222;
+    height: 250px;
+    padding-top: 10px;
+}
 
 a:default{
   color:#FF1493;
@@ -48,17 +52,66 @@ a:hover{
 }
 
 h2{
-  border-bottom:5px dashed #222;
+  border-top:5px dashed #222;
+  padding-top:15px;
 }
 
-
-#skills1{
-  float:right;
-  padding-top: 50px;
+.img1 {
+  float: right;
+  max-width: 200px;
+  margin-left: 50px;
+  border: 10px 10px 10px solid white;
 }
 
-#volunteerexperience1{
-  float:left;
-  padding-top:50px;
+img{
+  max-width: 650px;
+}
+
+#top{
+  text-align: center;
+}
+
+.pdf{
+      color: #4682B4;
+      font:25px/1.5 "Poiret One";
+}
+
+@media print {
+  * {
+    color: #000;
+    background: transparent;
+  }
+
+  @page {
+    margin: 0.5in;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0.5em 0;
+  }
+
+  section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  nav,
+  .no-print {
+    display: none;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ") ";
+  }
 
 }
